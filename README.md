@@ -1,12 +1,10 @@
 # Библиотечная интеграция #
 
-TODO Describe the plugin shortly here.
-
-TODO Provide more detailed description here.
+Plugin for integration with EBS
 
 ## License ##
 
-2020 Senin Yurii <katorsi@mail.ru>
+2020 Senin Yurii <tsa@lanbook.ru>
 
 This program is free software: you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
