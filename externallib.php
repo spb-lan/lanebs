@@ -31,9 +31,9 @@ require_once($CFG->libdir . "/filelib.php");
 class mod_lanebs_external extends external_api
 {
 
-    private static $subscribeToken = false;//'4f7e69c9708f522743e2463a5dca10bcb8a4b487';
-    private static $readerToken = false;//'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhY2NvdW50X2lwX3BrIjoxMDkzMDE2LCJ1c2VyX3BrIjoxMDAwMDAwMiwic3Vic2NyaWJlcl9fZmsiOjEwMDAwMDAsImFjY291bnRfdHlwZSI6IkVic1xcTW9kZWxcXEFjY291bnRfSXAifQ.bDNIQXgF6gVASY1jGW2ykxI4PUxXaqEXJvBlJ4H1iQU';
-    private static $baseUrl = 'https://rus-moodle.landev.ru';
+    private static $subscribeToken = false;
+    private static $readerToken = false;
+    private static $baseUrl = 'https://moodle-api.e.lanbook.com';
 
     /**
      * Return category_tree webservice parameters.
