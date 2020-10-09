@@ -55,6 +55,14 @@ $event->add_record_snapshot('course', $course);
 $event->add_record_snapshot('lanebs', $moduleinstance);
 $event->trigger();
 
+$settings = get_config("lanebs");
+if (isset($settings->token) && !empty($settings->token)) {
+    $_SESSION['subscriberToken'] = $settings->token;
+}
+else if (isset($USER->profile['mod_lanebs_token']) && !empty($USER->profile['mod_lanebs_token'])) {
+    $_SESSION['subscriberToken'] = $USER->profile['mod_lanebs_token'];
+}
+
 $PAGE->requires->js_call_amd('mod_lanebs/view_button', 'init', array('title' => 'Просмотр'));
 
 $PAGE->set_url('/mod/lanebs/view.php', array('id' => $cm->id));

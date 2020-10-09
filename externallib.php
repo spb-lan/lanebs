@@ -120,6 +120,7 @@ class mod_lanebs_external extends external_api
     public static function book_content($id)
     {
         global $DB, $USER;
+        self::auth();
         //$params = self::validate_parameters(self::category_tree_parameters(), $searchParam);
         if (isset($_SESSION['readerToken']) && !empty($_SESSION['readerToken'])) {
             self::$readerToken = $_SESSION['readerToken'];
